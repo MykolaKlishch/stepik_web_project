@@ -22,7 +22,7 @@ stepik web-project (https://stepik.org/lesson/14825/step/11?unit=4174)
     Все URL с расширением (например /img/1.jpeg) отдавались из директории /home/box/web/public
     Все URL без расширения (например /question/123)  возвращали HTTP 404
 
-4) Фрагмент конфига nginx который обслуживает ваш проект должен находиться в файле /home/box/web/etc/nginx.conf [/home/box/web/etc/nginx_1_8_12.conf] и должен быть включен в основной конфиг [/etc/nginx/sites-enabled/default] с помощью символической ссылки [sudo ln -sf /home/box/web/etc/nginx_1_8_12.conf  /etc/nginx/sites-enabled/default].
+4) Фрагмент конфига nginx который обслуживает ваш проект должен находиться в файле /home/box/web/etc/nginx.conf [/home/box/web/etc/nginx1812.conf] и должен быть включен в основной конфиг [/etc/nginx/sites-enabled/default] с помощью символической ссылки [sudo ln -sf /home/box/web/etc/nginx1812.conf  /etc/nginx/sites-enabled/default].
 
 5) Запустите nginx, так что бы он принимал запросы на порту 80 и обслуживал бы любые домены.
 
