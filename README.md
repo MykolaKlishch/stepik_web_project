@@ -8,13 +8,13 @@ stepik web-project (https://stepik.org/lesson/14825/step/11?unit=4174)
 
 2) В директории /home/box (домашняя директория) создайте следующую структуру директорий
 
-/home/box/web
-          |---public
-          |   |---img
-          |   |---css
-          |   |---js
-          |---uploads
-          |---etc
+        /home/box/web
+                    |---public
+                    |   |---img
+                    |   |---css
+                    |   |---js
+                    |---uploads
+                    |---etc
 
 3) Настройте nginx так что бы:
 
