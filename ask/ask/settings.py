@@ -25,7 +25,7 @@ SECRET_KEY = 'vue++2hy6h0ansi#688l2s+6xkez0e60w5j&1otwj6y$+28ms!'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']  # original - ALLOWED_HOSTS = ['*']
 
 
 # Application definition
