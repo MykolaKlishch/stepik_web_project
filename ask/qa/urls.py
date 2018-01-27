@@ -1,11 +1,17 @@
-urlpatterns = [
-    url(r'^$', 'qa.views.test'),
-    url(r'^login/.*$', 'qa.views.testtest', name='login'),
-    url(r'^signup/.*', 'qa.views.testtest', name='signup'),
-    url(r'^question/(?P<id>[0-9]+)/$', 'qa.views.testtest', name='question'),
-    url(r'^ask/.*', 'qa.views.testtest', name='ask'),
-    url(r'^popular/.*', 'qa.views.testtest', name='popular'),
-    url(r'^new/.*', 'qa.views.testtest', name='new')
+from django.conf.urls import url  ### IMPORTANT
+from . import views ### IMPORTANT
+
+
+urlpatterns = [ ### IMPORTANT - don't organize as patterns() 
+                ### while importing patterns from django.conf.urls
+                ### for some reason it doesn't work
+    url(r'^$', views.test),
+    url(r'^login/.*$', views.test, name='login'),
+    url(r'^signup/.*', views.test, name='signup'),
+    url(r'^question/(?P<id>[0-9]+)/$', views.test, name='question'),
+    url(r'^ask/.*', views.test, name='ask'),
+    url(r'^popular/.*', views.test, name='popular'),
+    url(r'^new/.*', views.test, name='new')
 ]
 
 ### THIS CODE DIDN'T WORK:
