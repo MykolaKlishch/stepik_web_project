@@ -1,4 +1,5 @@
 # stepik_web_project
+Created while attending online course. 
 stepik web-project (https://stepik.org/lesson/14825/step/11?unit=4174)
 
 # Task 1.8.12
